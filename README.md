@@ -1,33 +1,4 @@
 # MERN-boilerplate
 
-This is a boilerplate project using the following technologies:
-- [React](https://facebook.github.io/react/) and [React Router](https://reacttraining.com/react-router/) for the frontend
-- [Express](http://expressjs.com/) and [Mongoose](http://mongoosejs.com/) for the backend
-- [Sass](http://sass-lang.com/) for styles (using the SCSS syntax)
-- [Webpack](https://webpack.github.io/) for compilation
-
-
-## Requirements
-
-- [Node.js](https://nodejs.org/en/) 6+
-
-```shell
-npm install
-```
-
-
-## Running
-
-Make sure to add a `config.js` file in the `config` folder. See the example there for more details.
-
-Production mode:
-
-```shell
-npm start
-```
-
-Development (Webpack dev server) mode:
-
-```shell
-npm run start:dev
-```
+Reference: [Uploading a File to Amazon Web Services (AWS) S3 Bucket with Node.js
+](https://medium.com/@Keithweaver_/uploading-a-file-to-amazon-web-services-aws-s3-bucket-with-node-js-133b0a1af2b9)
