@@ -6,6 +6,8 @@ const path = require('path');
 const webpack = require('webpack');
 const webpackDevMiddleware = require('webpack-dev-middleware');
 const webpackHotMiddleware = require('webpack-hot-middleware');
+const busboy = require('connect-busboy');
+const busboyBodyParser = require('busboy-body-parser');
 
 const config = require('../config/config');
 const webpackConfig = require('../webpack.config');
@@ -22,8 +24,10 @@ mongoose.connect(isDev ? config.db_dev : config.db);
 mongoose.Promise = global.Promise;
 
 const app = express();
+app.use(busboy());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(busboyBodyParser());
 
 // API routes
 require('./routes')(app);
